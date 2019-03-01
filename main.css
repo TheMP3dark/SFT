@@ -11,17 +11,19 @@
     box-shadow: 2px 2px 5px black;
 }*/
 
-.button-style {
+.button-style{
     align-content: center;
     margin: 50px;
     padding: 20px 40px 20px 40px;
     border-radius: 10px;
     font-size: 30px;
-    border-width: thick;
-    border-color: #4CAF50;
+    border-width: 10px;
+    transition-duration: 0.6s;
+    border-color: rgb(0, 0, 0);
+    text-decoration:none;
   }
   
-.button-.button-style {
+.button-style:hover{
     align-content: center;
     margin: 50px;
     padding: 20px 40px 20px 40px;
@@ -29,7 +31,9 @@
     font-size: 30px;
     background-color: #4CAF50;
     color: white;
+    transition-duration: 0.6s;
     border-color: #4CAF50;
+    text-decoration:none;
   }
 
 .sft-header{
@@ -54,7 +58,6 @@ a{
 }
 
 .banner-content{
-    background-image: url("res/img/banner-conent.jpg");
     padding: 5% 0px 5% 0px;
     width:100%;
 }
