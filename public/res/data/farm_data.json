@@ -1,0 +1,20 @@
+{
+  "people": [
+    {
+      "name":"Mohit Pujari",
+      "age": 21
+    },
+    {
+      "name":"Udbhav Sinha",
+      "age":19
+    },
+    {
+      "name":"Rahul Kumar",
+      "age":21
+    },
+    {
+      "name":"Nishant Kumar",
+      "age":20
+    }
+  ]
+}
