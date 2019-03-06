@@ -1,0 +1,31 @@
+body{
+    font-family: Product Sans;
+    text-decoration:none;
+    background-image: url("../banner-conent.jpg");
+}
+
+button{
+    align-content: center;
+    color:white;
+    margin: 50px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 4px solid;
+    transition-duration: 0.3s;
+    text-decoration:none;
+    background-color: rgba(0,0,0,0);
+}
+
+button:hover{
+    align-content: center;
+    margin: 50px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 4px solid;
+    transition-duration: 0.3s;
+    color:white;
+    text-decoration:none;
+
+}
