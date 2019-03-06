@@ -6,10 +6,33 @@
     <title>Smart Farm Tool | Customer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="cust_main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <ul id="people"></ul>
+    <nav class="navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Smart Farm Tool.</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Customer</a></li>
+            <li><a href="#">Farm</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+          <button class="btn btn-success navbar-btn back-btn">Back</button>
+        </div>
+      </nav> 
+
+    <br>
+    <br>
+
+    <center>
+        <ul id="people" class="des container card"><br></ul>
+    </center>
+    
     <script>
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -19,7 +42,7 @@
   
               var output = '';
               for(var i = 0;i < people.length;i++){
-                output += '<li>'+people[i].name+'</li>'+'<li>'+people[i].age+'</li>'+'<br>';
+                output += '<div class="card-content">'+'<li>'+people[i].name+'</li>'+'<li>'+people[i].age+'</li>'+'<br>'+'</div>';
               }
               document.getElementById('people').innerHTML = output;
             }
