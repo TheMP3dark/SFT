@@ -9,20 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
-    <script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyADpU5rT_keFK6IkOzsw8Jqseh8Qw2Ubus",
-        authDomain: "sft-practice.firebaseapp.com",
-        databaseURL: "https://sft-practice.firebaseio.com",
-        projectId: "sft-practice",
-        storageBucket: "",
-        messagingSenderId: "55569754934"
-    };
-    firebase.initializeApp(config);
-    </script>
+    <script src="main.js"></script>   
 </head>
 
 <style>
@@ -33,41 +20,64 @@
 </style>
 
 <body>
-    <div class="sft-header">
-        <div class="container head-sft">
-            <strong>
-                    Smart Farm Tool.
-            </strong>
+    <div class="container-fluid sft-header" style="height:100%;">
+        <div class="container-fluid sft-header-txt">
+            Smart Farm Tool.
+        </div>
+
+        <a href="http://www.google.co.in">
+            <button class="btn-dload"><img src="res/img/gp.png" style="max-width: 30px; height:auto;">  Get the app.</button>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="content-holder container-fluid" style="height:100%;">
+        <div class="content">
+                Smart Farm Tool is a free to use tool for farmers. Our vision is to provide farmers with an easy to use tool for managing their expenses. The tool will also provide farmers with profitable selling prices for their produce. The tool has many more features.
+        </div>
+
+        <br>
+        <br>
+
+        <div class="buttons">
+            <center>
+                <div class="farm-card">
+                    
+                    If you are a farmer, click the button below. It will take you to your profile from where you can easily manage your produce. You will need to login to your profile.
+
+                    <br>
+
+                    <a href="nav/farm/farm_main.htm">
+                        <button class="btn-farm">Farmer</button>
+                    </a>
+                </div>
+
+                <div class="cust-card">
+
+                    Looking to buy crops directly from farmers? Click the button below to browse various crops. You will need to contact the farmer directly for purchases.
+
+                    <br>
+
+                    <a href="nav/cust/cust_main.htm">
+                        <button class="btn-cust">Customer</button>
+                    </a>
+                </div> 
+            </center>
         </div>
     </div>
 
-    <div class="banner-content">
-            <div class="container sft-content">
-                Smart Farm Tool is a free to use tool for farmers. Our vision is to provide farmers with an easy to use tool for managing their expenses. The tool will also provide farmers with profitable selling prices for their produce. The tool has many more featuers.
-            
-            </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <center>
-                    <div>
-                        <a href = "nav/farm/farm_main.htm" >
-                            <button class="btn-farm">
-                                    Farmer
-                            </button>  
-                        </a>
-        
-                        <a href = "nav/cust/cust_main.htm" >
-                            <button class="btn-cust">
-                                Customer
-                            </button>
-                        </a>
-                     </div>
-            </center>
-            
+    <div class="footer container">
+        <center>
+            Made with love in India.
+        </center>
     </div>
 </body>
 </html>
