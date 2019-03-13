@@ -75,6 +75,16 @@
     font-weight: bold;
 }
 
+.footer{
+    background: rgba(0,0,0,0.85);
+    padding: 1%;
+    font-size:15px;
+    position: relative;
+    bottom: 0%;
+    width:100%;
+    color:white;
+}
+
 .submit-btn:hover{
     background-color: #33691e;
     border-color: #33691e;
@@ -84,6 +94,7 @@ body{
     font-family: Product Sans;
     text-decoration: none;
     background-image: url("../../res/img/banner-content.jpg");
+    background-size: 100%;
 }
 
 a{

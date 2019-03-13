@@ -60,6 +60,15 @@ ul{
     float: right;
 }
 
+.footer{
+    background: rgba(0,0,0,0.85);
+    padding: 1%;
+    font-size:15px;
+    height: 100%;
+    bottom: 0px;
+    color:white;
+}
+
 .card{
     float: left;
     position: relative;
@@ -84,6 +93,7 @@ body{
     font-family: Product Sans;
     text-decoration: none;
     background-image: url("../../res/img/banner-content.jpg");
+    background-size:100%;
 }
 
 a{
