@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Smart Farm Tool | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../farm/farm_main.css">
+
+    <!--Firebase Imports-->
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyADpU5rT_keFK6IkOzsw8Jqseh8Qw2Ubus",
+        authDomain: "sft-practice.firebaseapp.com",
+        databaseURL: "https://sft-practice.firebaseio.com",
+        projectId: "sft-practice",
+        storageBucket: "sft-practice.appspot.com",
+        messagingSenderId: "55569754934"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script>
+        var isLoggedIn=0;
+        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
+        function logout(){
+            firebase.auth().signOut();
+            location.reload();
+            isLoggedIn=0;
+            window.location.href = "../farm/farm.html";
+        }
+
+        function login(){
+            
+            var provider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    // User is signed in.
+                    isLoggedIn=1;
+                    var displayName = user.displayName;
+                    var email = user.email;
+                    var emailVerified = user.emailVerified;
+                    var photoURL = user.photoURL;
+                    var isAnonymous = user.isAnonymous;
+                    var uid = user.uid;
+                    var providerData = user.providerData;
+                    window.location.href = "../farm_dash/farm_dash.html";
+                    // ...
+                } else {
+                    firebase.auth().signInWithRedirect(provider);
+                }
+            });
+           
+        }
+
+        function checkLogin(){
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    isLoggedIn=1;
+                    window.location.href = "../farm_dash/farm_dash.html";
+                }
+            });    
+        }
+
+        window.onload(checkLogin());
+        </script>
+        
+</head>
+
+<style>
+    @font-face {
+        font-family: Product Sans;
+        src: url("../../res/font/Product Sans Regular.ttf");
+    } 
+</style>
+
+<body>
+    <div class="main-navbar-custom">
+        <div class="logo-main">
+            <a href="../../index.html" class="link">
+                Smart Farm Tool.
+            </a>
+        </div>
+
+        <div class="ext-links" style="float:right;">
+            <div class="navbar-btn-custom" style="float:right;"><a href="#" class="link">About Us.</a></div>
+            <div class="navbar-btn-custom" style="float:right;"><a href="../cust/cust_main.html" class="link">Customer</a></div>
+            <div class="active" style="float:right;"><span class="active link">[ Farmer ]</span></div>  
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center>
+            <div class="content-holder">
+                
+                    <div class="header-txt">
+                            Log In
+                        </div>
+
+                        <hr color="white">
+                        <br>
+
+				
+                    <div class="loginInfo">
+                        You need to Login using a google account in order to access your dashboard. Click on the button below to get redirected to the Google Login page. You will be redirected back to your dashboard after successful autehntication.
+                    </div>
+                    <br>
+                    <button class="submit-btn" onclick="login()">Login</button>
+
+				
+			</div>
+    </center>
+
+    <br>
+    <br>
+    
+    <div class="footer container">
+            <center>
+                Made with love in India.
+            </center>
+    </div>
+</body>
+</html>

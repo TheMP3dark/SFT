@@ -94,7 +94,7 @@ body{
     font-family: Product Sans;
     text-decoration: none;
     background-image: url("../../res/img/banner-content.jpg");
-    background-size: 100%;
+    background-size: auto 100%;
 }
 
 a{
@@ -133,4 +133,10 @@ input[type=password]:focus {
     background-color: #2962ff;
     color:white;
     border-color:white;
+}
+
+
+.loginInfo{
+    color:white;
+    font-size:30px;
 }
