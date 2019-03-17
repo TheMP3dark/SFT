@@ -1,13 +1,15 @@
 .main-navbar-custom{
-    background: rgba(0,0,0,0.85);
+    background: rgba(232,245,233,0.85);
     padding: 1%;
     float: left;
     width:100%;
 }
 
 .logo-main{
-    color:white;
+    font-family: Product Sans;
+    color:#4caf50;
     font-size: 40px;
+    font-weight: bold;
     float:inherit;
     
 }
@@ -15,17 +17,17 @@
 .ext-links{
     font-size:30px;
     float: inherit;
-    color:white;
+    color:#4caf50;
 }
 
 .link{
     padding: 5px;
     text-decoration:none;
-    color:white;
+    color:#4caf50;
 }
 
 .link:hover{
-    color:gray;
+    color:#1b5e20;
     text-decoration:none;
 }
 
@@ -41,15 +43,45 @@
 }
 
 .active{
-    color:gray;
+    color:#1b5e20;
     display: block;
     height: 100%;
     float: left;
 }
 
+.content-holder{
+    background: rgba(215, 215, 215, 0.85);
+    color:#e8f5e9;
+    width:40%;
+
+}
+
+.header-txt{
+    color:white;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.footer{
+    text-align:center;
+    font-size:25px;
+    width:100%;
+    color:#4caf50;
+}
+
+a{
+    text-decoration: none;
+}
+
+.imgSFT{
+    width:100%;
+}
+
+
 .des{
-    font-size: 30px;
-    color: antiquewhite; 
+    font-family: Product Sans;
+    color:#e8f5e9;
+    font-size:30px; 
 }
 
 ul{
@@ -61,12 +93,10 @@ ul{
 }
 
 .footer{
-    background: rgba(0,0,0,0.85);
-    padding: 1%;
-    font-size:15px;
-    height: 100%;
-    bottom: 0px;
-    color:white;
+    font-size:25px;
+    background-color: rgba(232,245,233,0.9);
+    color:#4caf50;
+    width:100%;
 }
 
 .card{
@@ -76,11 +106,10 @@ ul{
 }
     
 .card-content{
-    background-color: rgba(0,0,0,0.7);
-    border: thick solid;
+    background-color: rgb(76, 175, 80);
+    border:2px solid;
     border-color:white;
     padding:2%;
-    border-radius: 10px;
     margin:3%;
     float: left;
     position: relative;
@@ -89,13 +118,12 @@ ul{
     height:100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     font-family: Product Sans;
     text-decoration: none;
-    background-image: url("../../res/img/banner-content.jpg");
-    background-size:100%;
-}
-
-a{
-    text-decoration: none;
+    background-color:#2962ff;
 }
