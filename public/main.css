@@ -1,100 +1,160 @@
 .sft-header{
-    background: rgba(0,0,0,0.85);
-    padding: 1%;
+    background: rgba(232,245,233,0.85);
 }
 
 .sft-header-txt{
-    color:white;
+    color:#4caf50;
     font-size: 80px;
     font-weight: bold;
     float:left;
 }
 
+.btn-dload-div{
+    float:right;
+    margin-top:30px;
+    font-size:25px;
+}
+
 .btn-dload{
-    float:right;
+    color:#4caf50;
+    border:2px solid #4caf50;
+    transition-duration: 0.4s;
+    background:rgba(0,0,0,0);
 }
 
-
-.farm-card{
-    width:40%;
-    float :left;
-    border: 3px solid;
-    border-radius:10px;
-    margin-left:5%;
-    padding: 0.5% 2% 1% 2%;
-    border-color: white;
-    color:white;
-    background-color: rgba(0, 194, 74, 0.5);
-    font-size: 25px;
-}
-
-.cust-card{
-    width:40%;
-    float :right;
-    border: 3px solid;
-    border-radius:10px;
-    margin-right:5%;
-    padding: 0.5% 2% 1% 2%;
-    border-color: white;
-    color:white;
-    background-color: rgba(0, 45, 194, 0.5);
-    font-size: 25px;
-}
-
-.footer{
-    background: rgba(0,0,0,0.85);
-    padding: 1%;
-    font-size:15px;
-    position: relative;
-    bottom: 0%;
-    width:100%;
-    color:white;
-}
-
-.btn-dload:hover{
-    float:right;
-    background-color: #33691e;
-    border-color: #33691e;
-}
-
-.btn-farm:hover{
-    background-color:#46b600;
-    border-color: #46b600;
+.btn-cust{
+    color:#e3f2fd;
+    border:2px solid #e3f2fd;
+    transition-duration: 0.4s;
+    background:rgba(0,0,0,0);
 }
 
 .btn-cust:hover{
-    background-color: #2962ff;
-    border-color: #2962ff;
+    color:#1976d2;
+    transition-duration: 0.4s;
+    background-color: #e3f2fd;
 }
 
-.content-holder{
-    background: rgba(0,0,0,0.7);
-    padding: 1%;
-    width:90%;
-    border-radius: 5px;
-    padding:3%;
+.btn-farm{
+    color:#e3f2fd;
+    border:2px solid #e3f2fd;
+    transition-duration: 0.4s;
+    background:rgba(0,0,0,0);
+}
+
+.btn-farm:hover{
+    color:#388e3c;
+    transition-duration: 0.4s;
+    background-color: #e3f2fd;
+}
+
+.btn-dload:hover{
+    color:#e8f5e9;
+    transition-duration: 0.4s;
+    background-color: #4caf50
 }
 
 .content{
     font-size:30px;
-    color:white;
+    color:#1b5e20;
+    text-align: center;
 }
 
-button{
-    border: 3px solid;
-    border-radius:10px;
-    margin: 2%;
-    padding: 0.5% 2% 1% 2%;
-    border-color: white;
-    color:white;
-    background-color: rgba(0,0,0,0.7);
-    font-size: 30px;
-    transition-duration: 0.7s;
+.cust-card{
+    font-size:25px;
+    color:#e3f2fd;
+    background-color:#1976d2;
+    float:left;
 }
+
+.cust-card-txt{
+    padding:40px;
+    width:45%;
+    float:inherit;
+}
+
+.cust-card-img{
+    padding-right:40px;
+    float:right;
+    margin:0px;
+}
+
+.farm-card{
+    font-size:25px;
+    color:#e3f2fd;
+    background-color:#388e3c;
+    float:right;
+}
+
+.farm-card-txt{
+    padding:40px;
+    width:45%;
+    float:inherit;
+}
+
+.farm-card-img{
+    padding-left:40px;
+    float:left;
+    margin:0px;
+}
+
+.breakspace{
+    height:45px;
+}
+
+.main-img-img{
+    background-image: url("res/img/banner-content.jpg");
+    width:100%;
+    background-position:bottom;
+    background-size: 100% auto;
+}
+
+.main-img-txt{
+    padding-top:400px;
+    padding-bottom:20px;
+    font-size:30px;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.the-team{
+    font-size:30px;
+    color: #1b1b1b;
+}
+
+.footer{
+    font-size:25px;
+    background-color: rgba(232,245,233,0.9);
+    color:#4caf50;
+    width:100%;
+}
+
+.team-img{
+    display:block;
+    float:left;
+    margin:35px;
+    width:20%;
+}
+
+.team-img-img{
+    width:100%;
+    display:block;
+}
+
+.team-img-txt{
+    font-size:20px;
+}
+
+.hr-style {
+    border: 0;
+    height: 55px;
+    background-image: url(image/type_5.png);
+    background-repeat: no-repeat;
+    }
 
 body{
     text-decoration: none;
-    background-image: url("res/img/banner-content.jpg");
     background-size: auto 100%;
     font-family: Product Sans;
 }

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "sft": "sft-practice"
+    "sft": "sft-practice",
+    "default": "smartfarmtool-8380"
   }
 }

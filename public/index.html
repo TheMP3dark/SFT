@@ -9,59 +9,164 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-</head>
-
+    <link rel="stylesheet/scss" type="text/css" href="hr.scss">
 <style>
     @font-face {
         font-family: Product Sans;
         src: url("res/font/Product Sans Regular.ttf");
 } 
 </style>
+</head>
 
 <body>
-    <div class="container-fluid sft-header" style="height:100%;">
+    <div class="container sft-header" style="position:fixed; width:100%;">
         <div class="container-fluid sft-header-txt">
             Smart Farm Tool.
         </div>
-        <a href="http://www.google.co.in">
-            <button class="btn-dload"><img src="res/img/gp.png" style="max-width: 30px; height:auto;">  Get the app.</button>
-        </a>
+        <div class="btn-dload-div">
+            <a href="http://www.google.co.in">
+                <button class="btn-dload"><img src="res/img/gp.png" style="max-width: 30px; height:auto;">  Get the app.</button>
+            </a>
+        </div>  
     </div>
+
+    <div class="main-img">
+        <div class="main-img-img">
+                <div class='main-img-txt'>
+                        Making agriculture easier.
+                </div>
+        </div>
+        
+    </div>
+
     <br>
     <br>
     <br>
-    <div class="content-holder container-fluid" style="height:100%;">
-        <div class="content">
+    <br>
+    <br>
+
+    <div class="content-holder">
+        <div class="content container">
             Smart Farm Tool is a free to use tool for farmers. Our vision is to provide farmers with an easy to use tool for managing their expenses. The tool will also provide farmers with profitable selling prices for their produce. The tool has many more features.
         </div>
+
         <br>
         <br>
+        <br>
+        <br>
+        <br>
+
         <div class="buttons">
-            <center>
                 <div class="farm-card">
+                    <div class="farm-card-txt">
+                            If you are a farmer, click the button below. It will take you to your profile from where you can easily manage your produce. You will need to login to your profile.
 
-                    If you are a farmer, click the button below. It will take you to your profile from where you can easily manage your produce. You will need to login to your profile.
+                            <br>
+                            <br>
 
-                    <br>
-                    <a href="nav/farm/farm_main.html">
-                        <button class="btn-farm">Farmer</button>
-                    </a>
+                            <a href="nav/farm/farm_main.html">
+                                <button class="btn-farm">Farmer</button>
+                            </a>
+                    </div>
+
+                    <div class="farm-card-img">
+                        <img src="res/img/banner-content.jpg" height=300px>
+                    </div>   
                 </div>
+
+                <div>
+                    .
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
                 <div class="cust-card">
-                    Looking to buy crops directly from farmers? Click the button below to browse various crops. You will need to contact the farmer directly for purchases.
+                    <div class="cust-card-txt">
+                            Looking to buy crops directly from farmers? Click the button below to browse various crops.
+                            <br>
+                            <br>
+                            <a href="nav/cust/cust_main.html">
+                                <button class="btn-cust">Customer</button>
+                            </a>
+                    </div>
 
-                    <br>
-                    <a href="nav/cust/cust_main.html">
-                        <button class="btn-cust">Customer</button>
-                    </a>
+                    <div class="cust-card-img">
+                        <img src="res/img/banner-content.jpg" height=300px>
+                    </div>   
                 </div>
-            </center>
         </div>
     </div>
+
+    <div>
+            .
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    </div>
+    
+    <br>  
+            <div class="box">
+                <center>
+                    <img src="res/img/hr.png" style="max-width: 100%">
+                </center>
+              
+            </div>
+          </div>
     <br>
-    <br>
-    <br>
-    <br>
+
+    <div class="the-team">     
+        <center>
+            <b><u>The team:</u></b>
+            <div class="team-imgs">
+                <div class="team-img">
+                    <img src="res/img/banner-content.jpg" class="team-img-img">
+                    <br>
+                        <div class="team-img-txt">
+                                Nishant Roy.
+                        </div>       
+                </div>
+
+                <div class="team-img">
+                    <img src="res/img/banner-content.jpg" class="team-img-img">
+                    <br>
+                    <div class="team-img-txt">
+                            Rahul Kumar.
+                    </div> 
+                </div>
+
+                <div class="team-img">
+                    <img src="res/img/banner-content.jpg" class="team-img-img">
+                    <br>
+                    <div class="team-img-txt">
+                            Udbhav Kishor.
+                    </div>  
+                </div>
+
+                <div class="team-img">
+                        <img src="res/img/banner-content.jpg" class="team-img-img">
+                    <br>
+                    <div class="team-img-txt">
+                            Mohit Pujari.
+                    </div> 
+                </div>
+            </div>
+        </center> 
+    </div>
+
+    <div>
+            .
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    </div>
+
     <div class="footer container">
         <center>
             Made with love in India.

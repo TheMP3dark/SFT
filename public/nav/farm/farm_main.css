@@ -1,13 +1,14 @@
 .main-navbar-custom{
-    background: rgba(0,0,0,0.85);
+    background: rgba(232,245,233,0.85);
     padding: 1%;
     float: left;
     width:100%;
 }
 
 .logo-main{
-    color:white;
+    color:#4caf50;
     font-size: 40px;
+    font-weight: bold;
     float:inherit;
     
 }
@@ -15,17 +16,17 @@
 .ext-links{
     font-size:30px;
     float: inherit;
-    color:white;
+    color:#4caf50;
 }
 
 .link{
     padding: 5px;
     text-decoration:none;
-    color:white;
+    color:#4caf50;
 }
 
 .link:hover{
-    color:gray;
+    color:#1b5e20;
     text-decoration:none;
 }
 
@@ -41,32 +42,32 @@
 }
 
 .active{
-    color:gray;
+    color:#1b5e20;
     display: block;
     height: 100%;
     float: left;
 }
 
 .submit-btn{
-    border: 3px solid;
-    border-radius:10px;
-    margin: 2%;
-    padding: 2% 10% 2% 10%;
-    border-color: white;
-    color:white;
-    background-color: rgba(0,0,0,0.7);
-    font-size: 30px;
-    transition-duration: 0.7s;
+    margin-bottom: 20px;
+    font-size:25px;
+    color:#0C50C8;
+    border:2px solid #0C50C8;
+    transition-duration: 0.4s;
+    background:rgba(0,0,0,0);
+}
+
+.submit-btn:hover{
+    color:#D7D7D7;
+    transition-duration: 0.4s;
+    background-color: #0C50C8;
 }
 
 .content-holder{
-    background: rgba(0,0,0,0.7);
-    padding: 1%;
+    background: rgba(215, 215, 215, 0.85);
+    color:#1b5e20;
     width:40%;
-    border-radius: 5px;
-    padding:3%;
-    border: 3px solid;
-    border-color: white;
+
 }
 
 .header-txt{
@@ -76,29 +77,27 @@
 }
 
 .footer{
-    background: rgba(0,0,0,0.85);
-    padding: 1%;
-    font-size:15px;
-    position: relative;
-    bottom: 0%;
+    font-size:25px;
+    background-color: rgba(232,245,233,0.9);
     width:100%;
-    color:white;
+    color:#4caf50;
 }
 
-.submit-btn:hover{
-    background-color: #33691e;
-    border-color: #33691e;
-}
 
 body{
     font-family: Product Sans;
     text-decoration: none;
-    background-image: url("../../res/img/banner-content.jpg");
-    background-size: auto 100%;
+    background-image: url("../../res/img/banner-content2.jpg");
+    background-color:#2962ff;
+    background-size:100%;
 }
 
 a{
     text-decoration: none;
+}
+
+.imgSFT{
+    width:100%;
 }
 
 input[type=email] {
@@ -137,6 +136,7 @@ input[type=password]:focus {
 
 
 .loginInfo{
-    color:white;
+    color:#0C50C8;
     font-size:30px;
+    padding:3%;
 }
